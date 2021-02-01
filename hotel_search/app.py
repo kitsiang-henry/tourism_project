@@ -21,11 +21,12 @@ app.layout = html.Div([
         ],
     ),
     html.Div(children=[
+        html.P("Select the tourist attractions which you are interested to visit", className='input'),
         html.Div(
             dcc.Dropdown(
                 id='tour-att',
                 options=[{'label': t, 'value': t} for t in tour_att_names],
-                value=["Eurasian Heritage Centre: Singapore Attraction"],
+                value=["Gardens by the Bay"],
                 multi=True
             ),
             style={'width': '50%', 'display': 'inline-block'})
@@ -47,6 +48,7 @@ def update_figure(attractions):
         lon = hotels_df["Longitude"],
         lat = hotels_df["Latitude"],
         text = hotels_df["Name"],
+        name = "Hotels",
         marker = {'size': 10, 'color': 'cyan'}
     ))
 
@@ -55,6 +57,7 @@ def update_figure(attractions):
         lon = filtered_tour_att["LONGTITUDE"],
         lat = filtered_tour_att["LATITUDE"],
         text = filtered_tour_att["PAGETITLE"],
+        name = "Tourist attractions",
         marker = {'size': 11, 'color': 'darkgoldenrod'}
     ))
 
@@ -64,7 +67,7 @@ def update_figure(attractions):
             'center': {'lon': 103.8, 'lat': 1.35},
             'zoom': 10
         },
-        showlegend = False
+        showlegend = True
     )
 
     return fig
