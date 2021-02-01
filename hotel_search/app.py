@@ -17,7 +17,7 @@ app.layout = html.Div([
     html.Div(
         className='header',
         children=[
-            html.H1("Recommendations of Hotels", className='recommendation')
+            html.H1("Hotel Hunting", className='recommendation')
         ],
     ),
     html.Div(children=[
