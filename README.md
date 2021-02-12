@@ -17,4 +17,4 @@ A tourism project which aims to provide new insights about the tourism and hospi
 
 2. Please be responsible to find out and understand the regulations and procedures before leasing or booking an Airbnb accommodation in Singapore.
 
-This repository will be updated and improved over time.
+This repository will be updated over time and its content will also be improved over time.
