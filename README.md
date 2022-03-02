@@ -16,5 +16,3 @@ A tourism project which aims to provide new insights about the tourism and hospi
 1. Surprisingly, there are Airbnb listings in Singapore despite the fact that renting out a place of residence for less than 3 consecutive months is not allowed in Singapore. However, with the available data of Airbnb listings in Singapore, I have visualised the data to analyse which neighbourhood(s) in Singapore has the lowest and highest Airbnb listings. This visualisation can be found in *geospatial_analysis.ipynb*.
 
 2. Please be responsible to find out and understand the regulations and procedures before leasing or booking an Airbnb accommodation in Singapore.
-
-This repository will be updated over time and its content will also be improved over time.
